@@ -1,0 +1,66 @@
+﻿@page
+@model TuProyecto.Pages.PostulacionModel
+@{
+    ViewData["Title"] = "Formulario de Postulación";
+}
+
+<div class="container mt-5" style="background-color:#eaf0fb; padding:30px; border-radius:12px; max-width:700px;">
+    <h2 class="text-center text-primary mb-4" style="font-weight:600;">Postulación al Fondo</h2>
+
+    @if (!string.IsNullOrEmpty(Model.Mensaje))
+    {
+        <div class="alert alert-success text-center">
+            @Model.Mensaje
+        </div>
+    }
+
+    <form method="post">
+        <div class="mb-3">
+            <label class="form-label text-primary">Fondo</label>
+            <input type="text" class="form-control" asp-for="Fondo" readonly style="background-color:#ffffff; border-radius:6px;" />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label text-primary">Nombre</label>
+            <input type="text" class="form-control" asp-for="Nombre" placeholder="Tu nombre" required style="border-radius:6px;" />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label text-primary">Tipo de Postulante</label>
+            <select class="form-select" asp-for="TipoPostulante" required style="border-radius:6px;">
+                <option value="">Selecciona...</option>
+                <option>Estudiante</option>
+                <option>Profesional</option>
+                <option>ONG / Asociación</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label text-primary">Tipo de Financiamiento</label>
+            <select class="form-select" asp-for="TipoFinanciamiento" required style="border-radius:6px;">
+                <option value="">Selecciona...</option>
+                <option>Parcial</option>
+                <option>Total</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label text-primary">Correo Electrónico</label>
+            <input type="email" class="form-control" asp-for="Correo" placeholder="correo@ejemplo.com" required style="border-radius:6px;" />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label text-primary">Comentarios</label>
+            <textarea class="form-control" asp-for="Comentarios" rows="3" placeholder="Comentarios adicionales" style="border-radius:6px;"></textarea>
+        </div>
+
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary" style="border-radius:8px; width:50%;">Enviar Postulación</button>
+        </div>
+    </form>
+
+    <div class="text-center mt-3">
+        <a asp-page="/Index" class="btn btn-outline-primary btn-sm">Volver a Fondos</a>
+    </div>
+</div>
+

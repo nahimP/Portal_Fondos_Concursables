@@ -1,0 +1,31 @@
+﻿@page
+@model TuProyecto.Pages.LoginModel
+@{
+    ViewData["Title"] = "Iniciar Sesión";
+}
+
+<div class="container mt-5">
+    <h1 class="text-center">Iniciar Sesión</h1>
+    <form method="post" class="mt-4">
+        <div class="mb-3">
+            <label>Usuario</label>
+            <input type="text" class="form-control" name="Username" required />
+        </div>
+        <div class="mb-3">
+            <label>Contraseña</label>
+            <input type="password" class="form-control" name="Password" required />
+        </div>
+        <button type="submit" class="btn btn-primary">Ingresar</button>
+
+        @if (Model.ErrorMessage != null)
+        {
+            <div class="text-danger mt-2">@Model.ErrorMessage</div>
+        }
+    </form>
+    <p class="mt-3 text-center">
+        ¿No tienes cuenta? <a asp-page="/Register">Regístrate aquí</a>
+    </p>
+</div>
+<p class="mt-3 text-center">
+    ¿No tienes cuenta? <a asp-page="/Register">Regístrate aquí</a>
+</p>
