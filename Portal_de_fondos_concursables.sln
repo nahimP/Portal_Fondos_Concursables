@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36518.9 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Portal_de_fondos_concursables", "Portal_de_fondos_concursables.csproj", "{0A1F707B-56F5-4C5E-B84C-F1837D23794F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0A1F707B-56F5-4C5E-B84C-F1837D23794F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A1F707B-56F5-4C5E-B84C-F1837D23794F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A1F707B-56F5-4C5E-B84C-F1837D23794F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A1F707B-56F5-4C5E-B84C-F1837D23794F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {925F0AA3-1377-4F52-83F1-2DAD3F5F6824}
+	EndGlobalSection
+EndGlobal
